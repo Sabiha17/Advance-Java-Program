@@ -1,0 +1,47 @@
+import java.awt.*;
+import java.awt.event.*;
+class Home extends Frame
+{
+Home()
+{
+addWindowListener(new WindowAdapter()
+{
+public void windowClosing(WindowEvent e)
+{
+System.exit(0);
+}
+});
+}
+public void paint ( Graphics g )
+{
+g.drawLine(300,500,1000,500);//flooring
+g.drawLine(300,500,300,250);//first line straight
+g.drawLine(500,500,500,250);//second line straight
+g.drawLine(1000,500,800,150);//third line staraight
+g.drawLine(300,250,1000,250);//fourth horizontal line
+g.drawLine(300,250,400,150);//left roof
+g.drawLine(400,150,500,250);//right roof
+g.drawLine(400,150,1000,150);//horizontal line
+
+//Door
+g.drawLine(375,500,375,350);
+g.drawLine(450,500,450,350);
+g.drawLine(375,350,450,350);
+//Window
+
+g.drawLine(700,375,700,425);
+g.drawLine(800,375,800,425);
+g.drawLine(700,425,800,425);
+g.drawLine(800,375,700,375);
+//small Window
+g.drawOval(370,180,50,50);
+}
+public static void main(String[] args)
+{
+Home h=new Home();
+h.setSize(400,400);
+h.setTitle("Home Drawing");
+h.setVisible(true);
+h.setBackground(Color.gray);
+}
+}
