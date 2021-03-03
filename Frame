@@ -1,0 +1,21 @@
+import java.awt.event.*;
+class Firstframe extends Frame
+{
+Firstframe()
+{
+addWindowListener(new WindowAdapter()
+{
+public void windowClosing(WindowEvent e)
+{
+System.exit(0);
+}
+});
+}
+public static void main(String[] args)
+{
+Firstframe f1=new Firstframe();
+f1.setVisible(true);
+f1.setSize(300,200);
+f1.setTitle("frame");
+}
+}
