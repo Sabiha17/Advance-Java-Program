@@ -1,0 +1,40 @@
+import java.awt.*;
+import java.awt.event.*;
+class Emoji extends Frame
+{
+Emoji()
+{
+addWindowListener(new WindowAdapter()
+{
+public void windowClosing(WindowEvent e)
+{
+System.exit(0);
+}
+});
+}
+public void paint(Graphics g)
+{
+//draw and fil rectangle
+g.setColor(Color.gray);
+g.fillRect(30,50,300,200);
+//draw and fill face
+g.setColor(Color.pink);
+g.fillOval(80,70,150,150);
+//Draw and fill eyes
+g.setColor(Color.black);
+g.fillOval(120,120,10,10);
+//Draw and Fill eyes
+g.setColor(Color.black);
+g.fillOval(170,120,10,10);
+// Draw smile
+g.setColor(Color.black);
+g.drawArc(130,170,50,20,0,-180);
+}
+public static void main(String[] args)
+{
+Emoji e=new Emoji();
+e.setSize(400,400);
+e.setTitle("Emoji Drawing");
+e.setVisible(true);
+}
+} 
