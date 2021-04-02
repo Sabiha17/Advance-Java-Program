@@ -14,34 +14,58 @@ System.exit(0);
 }
 public void paint ( Graphics g )
 {
-g.drawLine(300,500,1000,500);//flooring
-g.drawLine(300,500,300,250);//first line straight
-g.drawLine(500,500,500,250);//second line straight
-g.drawLine(1000,500,800,150);//third line staraight
-g.drawLine(300,250,1000,250);//fourth horizontal line
-g.drawLine(300,250,400,150);//left roof
-g.drawLine(400,150,500,250);//right roof
-g.drawLine(400,150,1000,150);//horizontal line
+//Outer look 
+g.setColor(Color.white);
+g.drawLine(300,500,1000,500);
+g.drawLine(300,500,300,250);
+g.drawLine(500,500,500,250);
+g.drawLine(1000,500,1000,250);
+g.drawLine(300,250,1000,250);
+g.drawLine(300,250,400,150);
+g.drawLine(400,150,500,250);
+g.drawLine(800,500,800,250);
+g.drawLine(800,250,900,150);
+g.drawLine(900,150,1000,250);
+g.drawLine(400,150,900,150);
+
+
+//Windows
+g.drawLine(350,300,350,350);
+g.drawLine(450,300,450,350);
+g.drawLine(350,300,450,300);
+g.drawLine(350,350,450,350);
+
+g.drawLine(850,300,850,350);
+g.drawLine(950,300,950,350);
+g.drawLine(850,300,950,300);
+g.drawLine(850,350,950,350);
 
 //Door
-g.drawLine(375,500,375,350);
-g.drawLine(450,500,450,350);
-g.drawLine(375,350,450,350);
-//Window
+g.drawLine(600,325,600,500);
+g.drawLine(700,325,700,500);
+g.drawLine(600,325,700,325);
 
-g.drawLine(700,375,700,425);
-g.drawLine(800,375,800,425);
-g.drawLine(700,425,800,425);
-g.drawLine(800,375,700,375);
+
 //small Window
 g.drawOval(370,180,50,50);
+g.drawOval(870,180,50,50);
+
+
+//draw man
+g.drawOval(200,400,30,30);
+g.drawLine(215,500,215,430);
+g.drawLine(215,430,195,450);
+g.drawLine(215,430,235,450);
+g.drawLine(215,475,195,500);
+g.drawLine(215,475,235,500);
 }
+
 public static void main(String[] args)
 {
 Home h=new Home();
 h.setSize(400,400);
 h.setTitle("Home Drawing");
 h.setVisible(true);
-h.setBackground(Color.gray);
+h.setBackground(Color.black);
 }
 }
