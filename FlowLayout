@@ -2,9 +2,9 @@ import java.awt.*;
 import javax.swing.*;  
   
 public class TFlowLayout{  
-JFrame t;  
+JFrame s;  
 TFlowLayout(){  
-    t=new JFrame();  
+    s=new JFrame();  
       
     JButton 1=new JButton("1");  
     JButton 2=new JButton("2");  
@@ -12,11 +12,11 @@ TFlowLayout(){
     JButton 4=new JButton("4");  
     JButton 5=new JButton("5");  
               
-    t.add(1);t.add(2);t.add(3);t.add(4);t.add(5);  
+    s.add(1);s.add(2);s.add(3);s.add(4);s.add(5);  
       
-    t.setLayout(new FlowLayout(FlowLayout.LEFT)); 
-    t.setSize(300,300);  
-    t.setVisible(true);  
+    s.setLayout(new FlowLayout(FlowLayout.LEFT)); 
+    s.setSize(300,300);  
+    s.setVisible(true);  
 }  
 public static void main(String[] args) {  
     new TFlowLayout();  
