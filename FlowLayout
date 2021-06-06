@@ -1,0 +1,24 @@
+import java.awt.*;  
+import javax.swing.*;  
+  
+public class TFlowLayout{  
+JFrame t;  
+TFlowLayout(){  
+    t=new JFrame();  
+      
+    JButton 1=new JButton("1");  
+    JButton 2=new JButton("2");  
+    JButton 3=new JButton("3");  
+    JButton 4=new JButton("4");  
+    JButton 5=new JButton("5");  
+              
+    t.add(1);t.add(2);t.add(3);t.add(4);t.add(5);  
+      
+    t.setLayout(new FlowLayout(FlowLayout.LEFT)); 
+    t.setSize(300,300);  
+    t.setVisible(true);  
+}  
+public static void main(String[] args) {  
+    new TFlowLayout();  
+}  
+}  
