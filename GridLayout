@@ -1,0 +1,36 @@
+import java.awt.*;  
+import javax.swing.*;  
+  
+public class MyGridLayout{  
+JFrame s;  
+MyGridLayout(){  
+    t=new JFrame();  
+      
+    JButton 1=new JButton("a");  
+    JButton 2=new JButton("b");  
+    JButton 3=new JButton("c");  
+    JButton 4=new JButton("d");  
+    JButton 5=new JButton("e");  
+    JButton 6=new JButton("f");  
+    JButton 7=new JButton("g");  
+    JButton 8=new JButton("h");  
+    JButton 9=new JButton("i");  
+          
+    s.add(1);
+    s.add(2);
+    s.add(3);
+    s.add(4);
+    s.add(5);  
+    s.add(6);
+    s.add(7);
+    s.add(8);
+    s.add(9);  
+  
+    s.setLayout(new GridLayout(3,3)); 
+    s.setSize(300,300);  
+    s.setVisible(true);  
+}  
+public static void main(String[] args) {  
+    new MyGridLayout();  
+}  
+}  
